@@ -25,3 +25,7 @@
  C:/www/cpp/boost_1_62_0/boost/asio/detail/impl/winsock_init.ipp:39: undefined reference to `_imp__WSAStartup@8'
  CMakeFiles\untitled1.dir/objects.a(main.cpp.obj): In function `ZN5boost4asio6detail17winsock_init_base7cleanupERNS2_4dataE':
  C:/www/cpp/boost_1_62_0/boost/asio/detail/impl/winsock_init.ipp:56: undefined reference to `_imp__WSACleanup@0'
+
+
+
+参考地址 [参考地址1](https://segmentfault.com/q/1010000007420187?sort=created)
