@@ -1,0 +1,20 @@
+cmake_minimum_required(VERSION 3.7)
+project(string)
+SET(BOOST_ROOT E:/C_library/boost_1_63_0)
+SET(BOOSTROOT E:/C_library/boost_1_63_0)
+SET(BOOST_LIBRARYDIR C:/MinGW/lib E:/C_library/boost_1_63_0/stage/lib/)
+set(Boost_DEBUG ON)
+message(${BOOST_ROOT})
+set(CMAKE_CXX_STANDARD 11)
+
+set(SOURCE_FILES main.cpp config.h)
+add_executable(string ${SOURCE_FILES})
+#find_package(Boost 1.63.0)
+link_directories(C:/MinGW/lib/ E:/C_library/boost_1_63_0/stage/lib/)
+include_directories(E:/C_library/boost_1_63_0)
+link_libraries(E:/C_library/boost_1_63_0/stage/lib)
+find_package(Boost REQUIRED system)
+
+#find_library(boost REQUIRED system)
+target_link_libraries(string boost_system wsock32 ws2_32)
+
