@@ -20,7 +20,7 @@
 2.运行之后,提示 boost 库找不到,那就是你没有把编译后的库复制到MinGW/lib文件夹下,记得要改成找不到的那个包的名字
 
 3. 报下面这个问题的吧.请在 cmake的target_link_libraries添加 wsock32 ws2_32 这两
-    完成的是这么写的 target_link_libraries(string boost_system wsock32 ws2_32)
+    完成的是这么写的 target_link_libraries(string boost_system wsock32 ws2_32)  
 >CMakeFiles\untitled1.dir/objects.a(main.cpp.obj): In function `ZN5boost4asio6detail17winsock_init_base7startupERNS2_4dataEhh':
  C:/www/cpp/boost_1_62_0/boost/asio/detail/impl/winsock_init.ipp:39: undefined reference to `_imp__WSAStartup@8'
  CMakeFiles\untitled1.dir/objects.a(main.cpp.obj): In function `ZN5boost4asio6detail17winsock_init_base7cleanupERNS2_4dataE':
@@ -29,3 +29,4 @@
 
 
 参考地址 [参考地址1](https://segmentfault.com/q/1010000007420187?sort=created)
+[boost库中文学习库](http://zh.highscore.de/cpp/boost/)
