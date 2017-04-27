@@ -7,14 +7,14 @@ set(Boost_DEBUG ON)
 message(${BOOST_ROOT})
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp config.h)
+set(SOURCE_FILES main.cpp config.h main2.cpp)
 add_executable(string ${SOURCE_FILES})
 #find_package(Boost 1.63.0)
 link_directories(C:/MinGW/lib/ E:/C_library/boost_1_63_0/stage/lib/)
 include_directories(E:/C_library/boost_1_63_0)
 link_libraries(E:/C_library/boost_1_63_0/stage/lib)
-find_package(Boost REQUIRED system)
+find_package(Boost REQUIRED system thread)
 
 #find_library(boost REQUIRED system)
-target_link_libraries(string boost_system wsock32 ws2_32)
+target_link_libraries(string boost_system boost_thread wsock32 ws2_32)
 

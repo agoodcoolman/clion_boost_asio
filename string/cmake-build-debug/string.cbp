@@ -90,6 +90,9 @@
 		<Unit filename="E:/clion_project/string/main.cpp">
 			<Option target="string"/>
 		</Unit>
+		<Unit filename="E:/clion_project/string/main2.cpp">
+			<Option target="string"/>
+		</Unit>
 		<Unit filename="E:/clion_project/string/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
